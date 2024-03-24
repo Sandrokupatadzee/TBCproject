@@ -10,34 +10,34 @@ func mirrorCheck(mirrorWord: String) -> Bool {
 }
 
 print(mirrorCheck(mirrorWord: Word))
-
-//დაწერეთ ფუნქცია რომელიც გადაცემულ რიცხვების array-ს ააკვარდატებს, დაპრინტავს და დააბრუნებს მნიშვნელობას.
-
-var numberList: [Int] = [1,2,3,4,5,6,7,8,9]
-var squareNumberList: [Int] = []
-func multiple(targetArray: [Int]) -> [Int] {
-    for character in numberList {
-        let result = character * character
-        squareNumberList.append(result)
-    }
-    return squareNumberList
-}
-print(multiple(targetArray: numberList))
-
-//დაწერეთ Closure რომელიც გაფილტრავს ლუწ რიცხვებს Int-ების Array-დან.
-
-var numbersList: [Int] = [1,2,3,4,5,6,7,8,9]
-var evenNumbersList: [Int] = []
-let evenClosure = {
-    for number in numbersList {
-        if number % 2 == 0 {
-            evenNumbersList.append(number)
-        }
-    }
-    return evenNumbersList
-}
-
-print(evenClosure())
+//
+////დაწერეთ ფუნქცია რომელიც გადაცემულ რიცხვების array-ს ააკვარდატებს, დაპრინტავს და დააბრუნებს მნიშვნელობას.
+//
+//var numberList: [Int] = [1,2,3,4,5,6,7,8,9]
+//var squareNumberList: [Int] = []
+//func multiple(targetArray: [Int]) -> [Int] {
+//    for character in numberList {
+//        let result = character * character
+//        squareNumberList.append(result)
+//    }
+//    return squareNumberList
+//}
+//print(multiple(targetArray: numberList))
+//
+////დაწერეთ Closure რომელიც გაფილტრავს ლუწ რიცხვებს Int-ების Array-დან.
+//
+//var numbersList: [Int] = [1,2,3,4,5,6,7,8,9]
+//var evenNumbersList: [Int] = []
+//let evenClosure = {
+//    for number in numbersList {
+//        if number % 2 == 0 {
+//            evenNumbersList.append(number)
+//        }
+//    }
+//    return evenNumbersList
+//}
+//
+//print(evenClosure())
 
 //დაწერეთ ფუნქცია, რომელიც პარამეტრად იღებს Int-ების მასივს. Escaping closure-ის მეშვეობით დაბეჭდეთ მიწოდებული მასივის ჯამი 5 წამის შემდეგ. დარწმუნდით რომ closure არის escaping და გამოიძახეთ ის მას შემდეგ რაც ფუნქცია დაბრუნდება.
 
